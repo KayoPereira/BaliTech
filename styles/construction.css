@@ -44,44 +44,53 @@
 footer {
   height: 300px;
   background-color: var(--purple-color);
+}
 
-  .info-contato {
-    font-size: 22px;
-    font-weight: semibold;
-    color: var(--main-bg-color);
-    font-family: "poppins", sans-serif;
-  }
+footer .info-contato {
+  font-size: 22px;
+  font-weight: semibold;
+  color: var(--main-bg-color);
+  font-family: "poppins", sans-serif;
+}
 
-  hr {
-    width: 300px;
-    height: 3px !important;
-    background-color: var(--yellow-color);
-    opacity: 1;
-  }
+footer hr {
+  width: 300px;
+  height: 3px !important;
+  background-color: var(--yellow-color);
+  opacity: 1;
+}
 
-  .span-location, a {
-    color: var(--main-bg-color);
-    font-family: "LeagueSpartan", sans-serif;
-    font-weight: medium;
-    font-size: 17px;
-    text-decoration: none;
-  }
+footer .span-location, footer a {
+  color: var(--main-bg-color);
+  font-family: "LeagueSpartan", sans-serif;
+  font-weight: medium;
+  font-size: 17px;
+  text-decoration: none;
+}
 
-  .left-footer {
-    position: absolute;
-    top: 25%;
-    left: 15%;
-  }
+footer .left-footer {
+  position: absolute;
+  bottom: 25%;
+  left: 15%;
+}
 
-  .right-footer {
-    color: var(--main-bg-color);
-    font-family: "LeagueSpartan", sans-serif;
-    font-weight: medium;
-    font-size: 17px;
-    position: absolute;
-    bottom: 25%;
-    right: 15%;
-  }
+footer .left-footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer .right-footer {
+  color: var(--main-bg-color);
+  font-family: "LeagueSpartan", sans-serif;
+  font-weight: medium;
+  font-size: 17px;
+  position: absolute;
+  bottom: 25%;
+  right: 15%;
+}
+
+footer a:hover {
+  color: var(--yellow-color);
 }
 
 @media (max-width: 1366px) {
@@ -89,16 +98,16 @@ footer {
     width: 600px;
   }
 
-  .left-section {
-    h1 {
-      font-size: 75px;
-    }
-    h4 {
-      font-size: 40px;
-    }
-    span {
-      font-size: 16px;
-    }
+  .left-section h1 {
+    font-size: 75px;
+  }
+  
+  .left-section h4 {
+    font-size: 40px;
+  }
+  
+  .left-section span {
+    font-size: 16px;
   }
 
   .right-section {
@@ -112,33 +121,35 @@ footer {
 
   footer {
     height: 252px;
-    .left-footer {
-      .info-contato {
-        font-size: 18px;
-      }
-
-      hr {
-        width: 245px;
-      }
-
-      ul {
-        padding-left: 0;
-        a {
-          font-size: 15px;
-        }
-
-        i {
-          font-size: 18px;
-          margin: 5px 0;
-        }
-      }
-    }
-
-    .right-footer {
-      font-size: 15px;
-      bottom: 18%;
-    }
   }
+  
+  footer .left-footer .info-contato {
+    font-size: 18px;
+  }
+  
+  footer .left-footer hr {
+    width: 245px;
+  }
+  
+  footer .left-footer ul {
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  footer .left-footer ul a {
+    font-size: 15px;
+  }
+  
+  footer .left-footer ul i {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  footer .right-footer {
+    font-size: 15px;
+    bottom: 25%;
+  }
+  
 }
 
 @media (max-width: 1024px) {
@@ -147,19 +158,74 @@ footer {
   }
 
   .elipse-img {
-    width: 546px;
-    bottom: -345px;
-    left: 0%;
+    width: 800px;
+    /* bottom: -345px; */
+    left: -15%;
   }
   
   .vector-img {
     width: 650px;
     right: 20%;
     bottom: 40%;
+    display: none;
   }
 
   .right-section {
     width: 50%;
+    margin-bottom: 5%;
+  }
+
+  .left-section {
+    margin-bottom: 5%;
+  }
+}
+
+@media (max-width: 540px){
+  section {
+    align-items: center;
+  }
+  .elipse-img {
+    width: 110%;
+    bottom: -50px;
+    left: -13%;
+  }
+
+  section .left-section h1 {
+    font-size: 60px;
+  }
+
+  section .left-section h4 {
+    font-size: 35px;
+  }
+
+  section .left-section span {
+    font-size: 15px;
+  }
+
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer .left-footer{
     margin-bottom: 10%;
+    top: 15%;
+  }
+
+  footer .right-footer {
+    margin-top: 10%;
+    left: 15%;
+    bottom: 10%;
+  }
+}
+
+@media (max-width: 540px) and (min-height: 750px) {
+  section {
+    margin-bottom: 27% !important;
+  }
+
+  .elipse-img {
+    height: 160%;
+    bottom: -150px;
   }
 }
