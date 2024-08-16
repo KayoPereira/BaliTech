@@ -1,7 +1,7 @@
 @import "colors.css";
 
 #navbar {
-  height: 70px;
+  min-height: 70px;
   background-color: var(--main-bg-color);
 }
 
