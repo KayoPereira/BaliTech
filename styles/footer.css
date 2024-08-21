@@ -1,0 +1,158 @@
+footer {
+  height: 45% !important;
+  max-height: 450px;
+  width: 100%;
+  background-color: var(--beige-color);
+  position: absolute;
+  bottom: 0;
+  border-top-left-radius: 60% 50px;
+  border-top-right-radius: 60% 50px;
+}
+
+.container-footer {
+  width: 50%;
+  position: absolute;
+  top: 15%;
+  left: 5%
+}
+
+.container-text{
+  margin-bottom: 5%;
+}
+
+footer .email, .phone {
+  background-color: var(--main-bg-color);
+  padding: 20px 0;
+  border-radius: 10px;
+}
+
+.footer-img {
+  width: 400px;
+  position: absolute;
+  bottom: 40%;
+  right: 20%;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 5%;
+  text-align: center;
+}
+
+/* .container-cards {
+  position: absolute;
+  left: 0;
+  bottom: -100px;
+} */
+
+.contact-text {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--purple-color-font);
+}
+
+.container-cards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+@media (max-width: 1366px) {
+  footer {
+    height: 35% !important;
+  }
+
+  .container-footer {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+  }
+
+  .container-text{
+    margin-bottom: 0;
+  }
+
+  .footer-img {
+    width: 300px;
+    position: absolute;
+    bottom: 45%;
+    right: 15%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container-cards div {
+    width: clamp(100px, 200px, 300px);
+  }
+
+  .footer-img {
+    width: 300px;
+    position: absolute;
+    bottom: 45%;
+    right: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-img {
+    width: 250px;
+    position: absolute;
+    bottom: 55%;
+    right: 5%;
+  }
+
+  .container-cards div {
+    min-width: 30%;
+  }
+  .container-cards > div:first-child {
+    margin-right: 0.5rem !important;
+  }
+  
+  .container-cards > div:nth-child(2) {
+    margin-left: 0.5rem !important;
+  }
+}
+
+@media (max-width: 540px) {
+  footer {
+    height: 60% !important;
+  }
+
+  .footer-img {
+    display: none !important;
+  }
+
+  .container-footer {
+    width: 100% !important;
+    left: 0;
+  }
+
+  .container-text{
+    width: 100%;
+  }
+
+  .container-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-cards div {
+    margin: 30px 0 !important;
+    width: clamp(70%, 80%, 90%);
+  }
+
+  .container-cards > div:first-child {
+    margin-right: 0 !important;
+  }
+  
+  .container-cards > div:nth-child(2) {
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 540px) and (min-height: 750px) {
+
+}
