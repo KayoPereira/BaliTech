@@ -1,0 +1,88 @@
+.partner-selector {
+  position: absolute;
+  top: 210px;
+}
+
+/* DELL */
+
+.dell.partner-selector {
+  left: 75px;
+}
+
+#dell:hover {
+  content: url('../images/partners/color/dell.svg');
+}
+
+/* LENOVO */
+
+.lenovo.partner-selector {
+  left: 220px;
+}
+
+#lenovo:hover {
+  content: url('../images/partners/color/lenovo.png');
+}
+
+/* CISCO */
+
+.cisco.partner-selector {
+  left: 370px;
+}
+
+#cisco:hover {
+  content: url('../images/partners/color/cisco.svg');
+}
+
+/* FORTINET */
+
+.fortinet.partner-selector {
+  left: 525px;
+}
+
+#fortinet:hover {
+  content: url('../images/partners/color/fortinet.svg');
+}
+
+/* NUTANIX */
+
+.nutanix.partner-selector {
+  left: 680px;
+}
+
+#nutanix:hover {
+  content: url('../images/partners/color/nutanix.svg');
+}
+
+/* AWS */
+
+.aws.partner-selector {
+  left: 815px;
+}
+
+#aws:hover {
+  content: url('../images/partners/color/aws.svg');
+}
+
+/* MICROSOFT */
+
+.microsoft.partner-selector {
+  left: 935px;
+}
+
+#microsoft:hover {
+  content: url('../images/partners/color/microsoft.svg');
+}
+
+/* HPE */
+
+.hpe.partner-selector {
+  left: 1075px;
+}
+
+#hpe:hover {
+  content: url('../images/partners/color/hpe.svg');
+}
+
+#more:hover {
+  content: url('../images/partners/color/more.svg');
+}

@@ -1,0 +1,76 @@
+#about-bali-home {
+  width: 100%;
+  min-height: 850px;
+  position: relative;
+  display: flex;
+}
+
+#about-bali-home .container-img {
+  width: 50%;
+  position: absolute;
+  left: 5%;
+  top: 300px;
+}
+
+#about-bali-home .container-text {
+  position: absolute;
+  right: 20%;
+  top: 385px;
+}
+
+.container-about {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.container-about .about-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--purple-color-font);
+}
+
+.mission span, .vision span{
+  font-family: "Open Sans", sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--grey-logo-font)
+}
+
+.mission p, .vision p{
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #636B78;
+}
+
+@media (max-width: 1366px) {
+  .container-img img {
+    width: 100%;
+  }
+  #about-bali-home .container-text {
+    right: 8%;
+    top: 315px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #about-bali-home .container-img {
+    top: 400px;
+  }
+  .container-img img {
+    width: 100%;
+  }
+  #about-bali-home .container-text {
+    right: 4%;
+    top: 390px;
+  }
+  .mission span, .vision span {
+    font-size: 26px;
+  }
+  .mission p, .vision p {
+    font-size: 14px;
+  }
+}

@@ -1,3 +1,144 @@
 @import "navbar.css";
 @import "footer.css";
-@import "banner.css";
+@import "components/banner.css";
+@import "components/about_banner.css";
+@import "partner_selector.css";
+
+/* PARTNERS */
+
+#partners {
+  position: relative;
+}
+
+#partners-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-about span {
+  font-family: "poppins", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+#partners-text-header {
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #333333;
+}
+
+#partners-list ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#partners-list ul li {
+  margin: 50px 15px 0 15px;
+  list-style: none;
+}
+
+.partner-info-container {
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 0.3em 0.3em 0 0 var(--purple-color-font), inset 0 0.2em 0 0 #333333;
+  padding: 50px 0;
+  height: 440px;
+  align-items: center;
+}
+
+.partner-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+}
+
+.partner-info img {
+  margin-bottom: 25px;
+}
+
+.partner-logo-list {
+  cursor: pointer;
+}
+
+/* SMART SOLUTIONS */
+
+#our-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#smart-solutions {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.smart-service-card {
+  width: 20%;
+  height: 285px;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 0.3em 0.3em 0 0 var(--purple-color-font);
+}
+.smart-service-card:hover {
+  box-shadow: 0.3em 0.3em 0 0 var(--yellow-color-font);
+}
+
+.smart-solutions-header {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--purple-color-font);
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#smart-solutions-text-header {
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #333333;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.container-smart-service-card-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.text-smart-service-card span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.text-smart-service-card#more-smart-service-text {
+  display: flex;
+
+}
+
+.more-smart-service:hover #more-smart-service-text{
+  display: none;
+}
+
+ul {
+  padding: 0 !important;
+}
+
+
+@media (max-width: 1366px) {
+}

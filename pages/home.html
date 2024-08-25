@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="../styles/home.css">
-    <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/6b6ee8f0c0.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,9 +13,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </head>
-  <body style="background-color: yellow; position: relative;">
+  <body style="position: relative;">
     <div id="navbar"></div>
-    <section style="position: relative;">
+    <section style="position: relative;" id="banner">
       <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../images/banner.png);">
         <div class="container">
           <h1 id="main-text">Uma empresa de <br>SOLUÇÕES</h1>
@@ -66,24 +65,159 @@
         </div>
       </div>
     </section>
-    <div style="height: 1000px;"></div>
+
+    <section id="about-bali-home">
+      <div class="container-img">
+        <img src="../images/about_bali_home.png">
+      </div>
+      <div class="container-text">
+        <div class="container-about">
+          <i class="fa-solid fa-circle me-3" style="color: #f6c000; font-size: 10px;"></i>
+          <span class="about-text">SOBRE A BALI</span>
+          <i class="fa-solid fa-circle ms-3" style="color: #f6c000; font-size: 10px;"></i>
+        </div>
+        <div class="mission">
+          <span>Nossa Missão</span>
+          <p>É ser a referência em soluções tecnológicas inovadoras e<br> sustentáveis.</p>
+        </div>
+        <div class="vision">
+          <span>Nossa Visão</span>
+          <p>É transformar o futuro através de soluções tecnológicas<br> inovadoras.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="partners-container">
+      <div class="container-about">
+        <i class="fa-solid fa-circle me-3" style="color: #f6c000; font-size: 7px;"></i>
+        <span class="about-text">PARCEIROS</span>
+        <i class="fa-solid fa-circle ms-3" style="color: #f6c000; font-size: 7px;"></i>
+      </div>
+      <span id="partners-text-header">A BALI fornece a qualidade que seu projeto precisa</span>
+      <div id="partners">
+        <div id="partners-list">
+          <ul>
+            <li>
+              <img src="../images/partners/color/dell.svg" id="dell" class="selected partner-logo-list">
+              <img src="../images/partner_selector.png" id="dell-partner-selector" class="dell partner-selector">
+            </li>
+            <li>
+              <img src="../images/partners/grey/lenovo.svg" id="lenovo" class="partner-logo-list">
+              <img src="../images/partner_selector.png" id="lenovo-partner-selector" class="lenovo partner-selector">
+            </li>
+            <li>
+              <img src="../images/partners/grey/cisco.svg" id="cisco" class="partner-logo-list">
+              <img src="../images/partner_selector.png" id="cisco-partner-selector" class="cisco partner-selector">
+            </li>
+            <li>
+              <img src="../images/partners/grey/fortinet.svg" id="fortinet" class="partner-logo-list">
+              <img src="../images/partner_selector.png" id="fortinet-partner-selector" class="fortinet partner-selector">
+            </li>
+            <li>
+              <img src="../images/partners/grey/nutanix.svg" id="nutanix" class="partner-logo-list">
+              <img src="../images/partner_selector.png" id="nutanix-partner-selector" class="nutanix partner-selector">
+            </li>
+            <li>
+              <img src="../images/partners/grey/aws.svg" id="aws" class="partner-logo-list">
+              <img src="../images/partner_selector.png" id="aws-partner-selector" class="aws partner-selector">
+            </li>
+            <li>
+              <img src="../images/partners/grey/microsoft.svg" id="microsoft" class="partner-logo-list">
+              <img src="../images/partner_selector.png" id="microsoft-partner-selector" class="microsoft partner-selector">
+            </li>
+            <li>
+              <img src="../images/partners/grey/hpe.svg" id="hpe" class="partner-logo-list">
+              <img src="../images/partner_selector.png" id="hpe-partner-selector" class="hpe partner-selector">
+            </li>
+            <li>
+              <img src="../images/partners/grey/more.svg" id="more" class="partner-logo-list">
+            </li>
+          </ul>
+        </div>
+        <div class="partner-info-container">
+          <img src="../images/partners/banners/dell.png" style="width: 770px; height: 240px;">
+          <div class="partner-info">
+            <img src="../images/partners/logos/logo_dell.png">
+            <p>a Dell é conhecida por projetar, fabricar, vender e<br> dar suporte a computadores pessoais, servidores,<br> dispositivos de armazenamento de dados,<br> software e periféricos.</p>
+          </div> 
+        </div>
+      </div>
+    </section> -->
+
+    <!-- <section id="our-services">
+      <div class="smart-solutions-header">
+        <i class="fa-solid fa-circle me-3" style="color: #f6c000; font-size: 7px;"></i>
+        <span class="about-text">NOSSOS SERVIÇOS</span>
+        <i class="fa-solid fa-circle ms-3" style="color: #f6c000; font-size: 7px;"></i>
+      </div>
+      <span id="smart-solutions-text-header">Soluções Inteligentes </span>
+      <div id="smart-solutions">
+        <div class="smart-service-card">
+          <div class="container-smart-service-card-info">
+            <img src="../images/icons/haas.png">
+            <div class="text-smart-service-card">
+              <span>HAAS</span>
+              <p class="d-none">As soluções em tecnologia são uma<br> realidade e tem o poder de<br> desbloquear resultados incríveis nas<br> empresas. Além disso, são um apoio<br> fundamental para a estratégia.</p>
+              <a href="#" class="learn-more d-none">
+                Saiba Mais
+                <i class="fa-solid fa-plus" style="color: #f6c000; font-size: 15px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="smart-service-card">
+          <div class="container-smart-service-card-info">
+            <img src="../images/icons/implementacao.png">
+            <div class="text-smart-service-card">
+              <span>IMPLEMENTAÇÃO</span>
+              <p class="d-none">"Hardware as a Service", é um modelo<br> de negócios onde o hardware é<br> fornecido a um cliente como um<br> serviço, em vez de ser vendido como<br> um produto...</p>
+              <a href="#" class="learn-more d-none">
+                Saiba Mais
+                <i class="fa-solid fa-plus" style="color: #f6c000; font-size: 15px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="smart-service-card">
+          <div class="container-smart-service-card-info">
+            <img src="../images/icons/monitoramento.png">
+            <div class="text-smart-service-card">
+              <span>MONITORAMENTO</span>
+              <p class="d-none">Um conjunto de ferramentas e<br> processos para observar, acompanhar<br> e gerenciar o desempenho, a<br> disponibilidade e a segurança de<br> sistemas de TI, redes, aplicações e<br> serviços...</p>
+              <a href="#" class="learn-more d-none">
+                Saiba Mais
+                <i class="fa-solid fa-plus" style="color: #f6c000; font-size: 15px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="smart-service-card more-smart-service">
+          <div class="container-smart-service-card-info">
+            <img src="../images/icons/more.png">
+            <div class="text-smart-service-card" id="more-smart-service-text">
+              <span class="text-center">MAIS<br> SERVIÇOS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <div style="height: 1200px;"></div>
     <div id="footer"></div>
     <!-- <section id="banner-home" class="banner">
 
     </section> -->
-
+    <script type="module" src="../index.js"></script>
     <script>
       fetch('../components/navbar.html')
             .then(response => response.text())
             .then(data => {
-              console.log(data)
               document.getElementById('navbar').innerHTML = data;
             });
 
       fetch('../components/footer.html')
             .then(response => response.text())
             .then(data => {
-              console.log(data)
               document.getElementById('footer').innerHTML = data;
             });
     </script>

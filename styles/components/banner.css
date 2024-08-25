@@ -43,6 +43,7 @@
   left: 15%;
   display: flex;
   justify-content: space-between;
+  z-index: 999;
 }
 
 .service-card {
@@ -51,6 +52,10 @@
   background-color: white;
   border: 1px solid black;
   box-shadow: 0.3em 0.3em 0 0 var(--purple-color-font);
+}
+
+.service-card:hover {
+  box-shadow: 0.3em 0.3em 0 0 var(--yellow-color-font);
 }
 
 .container-service-card-info {
@@ -104,3 +109,83 @@
   height: 70px;
   margin-top: 15px;
 }
+
+@media (max-width: 1366px) {
+  .banner {
+    height: 630px;
+  }
+  #container-service-cards {
+    width: 90%;
+    top: 510px;
+    left: 5%;
+  }
+  .service-card {
+    height: 250px;
+  }
+  .container-service-card-info img {
+    width: 60px;
+    height: 60px;
+  }
+  .text-service-card{
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .text-service-card p {
+    font-size: 13px;
+  }
+  .text-service-card span {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #container-service-cards {
+    min-width: 90%;
+  }
+  .service-card {
+    height: 420px;
+  }
+  .service-card div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+}
+
+@media (max-width: 540px) {
+  #banner {
+    height: 1200px;
+  }
+  .banner {
+    height: 700px;
+  }
+  .banner h1 {
+    font-size: 55px;
+  }
+  #container-service-cards {
+    min-width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    left: 5%;
+    top: 600px;
+  }
+  .service-card {
+    height: 330px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .service-card div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  .text-service-card {
+    margin-left: 0;
+  }
+}
+@media (max-width: 540px) and (min-height: 750px) {}

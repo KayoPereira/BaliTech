@@ -154,6 +154,8 @@ footer .email, .phone {
   }
 }
 
-@media (max-width: 540px) and (min-height: 750px) {
-
+@media (max-width: 540px) {
+  footer {
+    max-height: 650px !important;
+  }
 }

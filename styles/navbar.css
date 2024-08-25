@@ -54,7 +54,7 @@
   height: 40px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .links-list {
     display: flex; 
     justify-content: end;
