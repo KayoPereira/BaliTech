@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BaliTech</title>
     <link rel="stylesheet" type="text/css" href="../styles/home.css">
     <script src="https://kit.fontawesome.com/6b6ee8f0c0.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -78,16 +79,16 @@
         </div>
         <div class="mission">
           <span>Nossa Missão</span>
-          <p>É ser a referência em soluções tecnológicas inovadoras e<br> sustentáveis.</p>
+          <p>É ser a referência em soluções tecnológicas inovadoras e sustentáveis.</p>
         </div>
         <div class="vision">
           <span>Nossa Visão</span>
-          <p>É transformar o futuro através de soluções tecnológicas<br> inovadoras.</p>
+          <p>É transformar o futuro através de soluções tecnológicas inovadoras.</p>
         </div>
       </div>
     </section>
 
-    <!-- <section id="partners-container">
+    <section id="partners-container">
       <div class="container-about">
         <i class="fa-solid fa-circle me-3" style="color: #f6c000; font-size: 7px;"></i>
         <span class="about-text">PARCEIROS</span>
@@ -142,9 +143,9 @@
           </div> 
         </div>
       </div>
-    </section> -->
+    </section>
 
-    <!-- <section id="our-services">
+    <section id="our-services">
       <div class="smart-solutions-header">
         <i class="fa-solid fa-circle me-3" style="color: #f6c000; font-size: 7px;"></i>
         <span class="about-text">NOSSOS SERVIÇOS</span>
@@ -200,9 +201,8 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
-    <div style="height: 1200px;"></div>
     <div id="footer"></div>
     <!-- <section id="banner-home" class="banner">
 
@@ -220,6 +220,56 @@
             .then(data => {
               document.getElementById('footer').innerHTML = data;
             });
+    </script>
+
+    <script>
+      const partners = ['dell', 'lenovo', 'cisco', 'fortinet', 'nutanix', 'aws', 'microsoft', 'hpe']
+      const imgPartner = document.querySelector('.partner-info-container img');
+      const textPartner = document.querySelector('.partner-info p');
+      const logoPartner = document.querySelector('.partner-info img');
+      const screenWidth = window.innerWidth;
+      const partnerTexts = {
+        dell: "a Dell é conhecida por projetar, fabricar, vender e<br> dar suporte a computadores pessoais, servidores,<br> dispositivos de armazenamento de dados,<br> software e periféricos.",
+        lenovo: "Produtos projetados para atender tanto consumidores<br> finais quanto empresas, destacando-se pela durabilidade,<br> desempenho e design. são amplamente reconhecidos,<br> atendendo desde profissionais que precisam de alta<br> performance até gamers e usuários em busca de<br> mobilidade e eficiência.",
+        cisco: "Especializada em equipamentos e softwares que<br> conectam pessoas e empresas. Seus produtos, como<br> roteadores, switches e sistemas de segurança, são<br> essenciais para a infraestrutura de redes em<br> organizações de todos os portes.",
+        fortinet: "Líder em segurança cibernética, especializada em<br> soluções integradas de rede e proteção. Seus<br> produtos, como firewalls, sistemas de prevenção<br> de intrusões e segurança em nuvem.",
+        nutanix: "A Nutanix é uma empresa de tecnologia<br> especializada em soluções de infraestrutura<br> hiperconvergente, que simplificam a gestão de data<br> centers e nuvens híbridas.",
+        aws: "A AWS (Amazon Web Services) é a principal provedora<br> global de serviços de computação em nuvem. Oferecendo<br> uma vasta gama de soluções, desde armazenamento e<br> bancos de dados até inteligência artificial e análise de<br> dados.",
+        microsoft: "A Microsoft é uma das maiores e mais influentes empresas<br> de tecnologia do mundo, conhecida por seu software<br> inovador, como o sistema operacional Windows, o pacote<br> de produtividade Office e a plataforma de nuvem Azure.",
+        hpe: "A HPE Aruba Networking é uma divisão da Hewlett Packard<br> Enterprise especializada em redes sem fio, comutação e<br> segurança, a HPE Aruba oferece produtos que suportam a<br> conectividade em ambientes corporativos, desde pequenas<br> empresas até grandes data centers."
+      }
+
+      async function changePartnerImages() {
+        if (screenWidth <= 540) {
+          while (true) {
+            for (const partner of partners) {
+              imgPartner.style.opacity = 1;
+              logoPartner.style.opacity = 1;
+              textPartner.style.opacity = 1;
+
+              imgPartner.src = `../images/partners/banners/${partner}.png`;
+              logoPartner.src = `../images/partners/logos/logo_${partner}.png`;
+              textPartner.innerHTML = partnerTexts[partner];
+
+              logoPartner.classList = ''
+              imgPartner.classList = ''
+              logoPartner.classList.add(`${partner}-logo`)
+              imgPartner.classList.add(`${partner}-banner`)
+
+              await new Promise(resolve => setTimeout(resolve, 10000));
+
+              imgPartner.style.opacity = 0;
+              logoPartner.style.opacity = 0;
+              textPartner.style.opacity = 0;
+
+              await new Promise(resolve => setTimeout(resolve, 1000));
+            }
+          }
+        }
+      }
+
+      window.addEventListener('load', changePartnerImages);
+      window.addEventListener('resize', changePartnerImages);
     </script>
   </body>
 </html>

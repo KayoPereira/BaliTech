@@ -1,5 +1,3 @@
-// import changePartner from "./javascript/changePartner.js"
-
 const selectedPartner = document.querySelector('.selected');
 const partners = document.querySelectorAll('.partner-logo-list');
 const partnersSelector = document.querySelectorAll('.partner-selector');

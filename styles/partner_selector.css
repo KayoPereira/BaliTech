@@ -6,7 +6,7 @@
 /* DELL */
 
 .dell.partner-selector {
-  left: 75px;
+  left: 45px;
 }
 
 #dell:hover {
@@ -16,7 +16,7 @@
 /* LENOVO */
 
 .lenovo.partner-selector {
-  left: 220px;
+  left: 190px;
 }
 
 #lenovo:hover {
@@ -26,7 +26,7 @@
 /* CISCO */
 
 .cisco.partner-selector {
-  left: 370px;
+  left: 335px;
 }
 
 #cisco:hover {
@@ -36,7 +36,7 @@
 /* FORTINET */
 
 .fortinet.partner-selector {
-  left: 525px;
+  left: 495px;
 }
 
 #fortinet:hover {
@@ -46,7 +46,7 @@
 /* NUTANIX */
 
 .nutanix.partner-selector {
-  left: 680px;
+  left: 645px;
 }
 
 #nutanix:hover {
@@ -56,7 +56,7 @@
 /* AWS */
 
 .aws.partner-selector {
-  left: 815px;
+  left: 785px;
 }
 
 #aws:hover {
@@ -66,7 +66,7 @@
 /* MICROSOFT */
 
 .microsoft.partner-selector {
-  left: 935px;
+  left: 905px;
 }
 
 #microsoft:hover {
@@ -76,7 +76,7 @@
 /* HPE */
 
 .hpe.partner-selector {
-  left: 1075px;
+  left: 1045px;
 }
 
 #hpe:hover {
@@ -85,4 +85,66 @@
 
 #more:hover {
   content: url('../images/partners/color/more.svg');
+}
+
+@media (max-width: 1366px){
+  .partner-selector {
+    top: 146px;
+  }
+
+  .dell.partner-selector {
+    left: 85px;
+  }
+  .lenovo.partner-selector {
+    left: 190px;
+  }
+  .cisco.partner-selector {
+    left: 300px;
+  }
+  .fortinet.partner-selector {
+    left: 410px;
+  }
+  .nutanix.partner-selector {
+    left: 520px;
+  }
+  .aws.partner-selector {
+    left: 630px;
+  }
+  .microsoft.partner-selector {
+    left: 740px;
+  }
+  .hpe.partner-selector {
+    left: 855px;
+  }
+}
+
+@media (max-width: 1024px){
+  .partner-selector {
+    top: 146px;
+  }
+
+  .dell.partner-selector {
+    left: 40px;
+  }
+  .lenovo.partner-selector {
+    left: 150px;
+  }
+  .cisco.partner-selector {
+    left: 260px;
+  }
+  .fortinet.partner-selector {
+    left: 370px;
+  }
+  .nutanix.partner-selector {
+    left: 480px;
+  }
+  .aws.partner-selector {
+    left: 590px;
+  }
+  .microsoft.partner-selector {
+    left: 700px;
+  }
+  .hpe.partner-selector {
+    left: 810px;
+  }
 }

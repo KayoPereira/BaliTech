@@ -1,0 +1,102 @@
+#our-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 250px;
+}
+
+#smart-solutions {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.smart-service-card {
+  width: 20%;
+  height: 285px;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 0.3em 0.3em 0 0 var(--purple-color-font);
+}
+.smart-service-card:hover {
+  box-shadow: 0.3em 0.3em 0 0 var(--yellow-color-font);
+}
+
+.smart-solutions-header {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--purple-color-font);
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#smart-solutions-text-header {
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #333333;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.container-smart-service-card-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.text-smart-service-card span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.text-smart-service-card#more-smart-service-text {
+  display: flex;
+
+}
+
+.more-smart-service:hover #more-smart-service-text{
+  display: none;
+}
+
+ul {
+  padding: 0 !important;
+}
+
+
+@media (max-width: 1366px) {
+  #about-bali-home {
+    min-height: 720px; 
+  }
+  #our-services {
+    margin-bottom: 150px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #smart-solutions {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .smart-service-card {
+    width: 250px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 540px) {
+  #smart-solutions-text-header {
+    text-align: center;
+  }
+  .smart-service-card {
+    width: 290px;
+  }
+}

@@ -14,7 +14,7 @@
 
 #about-bali-home .container-text {
   position: absolute;
-  right: 20%;
+  right: 15%;
   top: 385px;
 }
 
@@ -53,6 +53,7 @@
   #about-bali-home .container-text {
     right: 8%;
     top: 315px;
+    width: 35%;
   }
 }
 
@@ -72,5 +73,28 @@
   }
   .mission p, .vision p {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 540px) {
+  #about-bali-home .container-img {
+    width: 100%;
+    left: 0;
+    top: 530px;
+  }
+  #about-bali-home .container-text {
+    right: 0;
+    top: 780px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .mission, .vision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 16px;
   }
 }

@@ -1,0 +1,145 @@
+@import "../partner_selector.css";
+
+.partner-info-container img,
+.partner-info p {
+  transition: opacity 1s ease-in-out;
+}
+
+#partners {
+  position: relative;
+}
+
+#partners-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-about span {
+  font-family: "poppins", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+#partners-text-header {
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #333333;
+}
+
+#partners-list ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#partners-list ul li {
+  margin: 50px 15px 0 15px;
+  list-style: none;
+}
+
+.partner-info-container {
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 0.3em 0.3em 0 0 var(--purple-color-font), inset 0 0.2em 0 0 #333333;
+  padding: 50px 0;
+  height: 440px;
+  align-items: center;
+}
+
+.partner-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+}
+
+.partner-info img {
+  margin-bottom: 25px;
+}
+
+.partner-logo-list {
+  cursor: pointer;
+}
+
+@media (max-width: 1366px) {
+  #partners {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  ul li img.partner-logo-list {
+    width: 80px;
+  }
+  .partner-info-container {
+    height: 365px;
+  }
+  .partner-info-container img:first-child {
+    max-width: 580px;
+    height: 230px;
+  }
+  .partner-info-container .partner-info img {
+    max-width: 350px;
+    max-height: 55px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #partners {
+    width: 97%;
+  }
+}
+
+@media (max-width: 540px) {
+  #partners-container {
+    margin-top: 355px;
+  }
+  #partners-list {
+    display: none;
+  }
+  #partners-text-header {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  #partners-text-header {
+    font-size: 20px;
+  }
+  .partner-info-container {
+    flex-direction: column-reverse;
+    height: 555px;
+  }
+  .partner-info {
+    width: 95%;
+  }
+  .partner-info p {
+    font-size: 14px;
+  }
+  .partner-info-container img:first-child {
+    width: 90% !important;
+    height: 200px !important;
+  }
+  .partner-info-container .partner-info img {
+    max-width: 90%;
+    max-height: 50px;
+  }
+  .lenovo-logo {
+    max-width: 50% !important;
+  }
+  .cisco-logo {
+    max-width: 35% !important;
+  }
+  .fortinet-logo {
+    max-width: 65% !important;
+    max-height: 40px !important;
+  }
+  .nutanix-logo {
+    max-width: 65% !important;
+    max-height: 40px !important;
+  }
+  .aws-logo {
+    max-width: 30% !important;   
+  }
+}
