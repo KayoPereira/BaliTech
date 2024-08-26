@@ -1,18 +1,18 @@
-#about-bali-home {
+#sobre {
   width: 100%;
   min-height: 850px;
   position: relative;
   display: flex;
 }
 
-#about-bali-home .container-img {
+#sobre .container-img {
   width: 50%;
   position: absolute;
   left: 5%;
   top: 300px;
 }
 
-#about-bali-home .container-text {
+#sobre .container-text {
   position: absolute;
   right: 15%;
   top: 385px;
@@ -50,7 +50,7 @@
   .container-img img {
     width: 100%;
   }
-  #about-bali-home .container-text {
+  #sobre .container-text {
     right: 8%;
     top: 315px;
     width: 35%;
@@ -58,13 +58,13 @@
 }
 
 @media (max-width: 1024px) {
-  #about-bali-home .container-img {
+  #sobre .container-img {
     top: 400px;
   }
   .container-img img {
     width: 100%;
   }
-  #about-bali-home .container-text {
+  #sobre .container-text {
     right: 4%;
     top: 390px;
   }
@@ -77,12 +77,12 @@
 }
 
 @media (max-width: 540px) {
-  #about-bali-home .container-img {
+  #sobre .container-img {
     width: 100%;
     left: 0;
     top: 530px;
   }
-  #about-bali-home .container-text {
+  #sobre .container-text {
     right: 0;
     top: 780px;
     display: flex;

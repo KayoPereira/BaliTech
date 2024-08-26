@@ -1,4 +1,4 @@
-#our-services {
+#solucoes {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,10 +80,10 @@ ul {
 
 
 @media (max-width: 1366px) {
-  #about-bali-home {
+  #sobre {
     min-height: 720px; 
   }
-  #our-services {
+  #solucoes {
     margin-bottom: 150px;
   }
 }
