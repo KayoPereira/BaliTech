@@ -12,13 +12,13 @@
 }
 
 .container-smart-service-card-link {
-  width: 20%;
   text-decoration: none;
   color: inherit; /* Preserva as cores do texto e imagens dentro do link */
 }
 
 .smart-service-card {
-  width: 100%;
+  max-width: 330px;
+  min-width: 280px;
   height: 285px;
   background-color: white;
   border: 1px solid black;
