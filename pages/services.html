@@ -372,6 +372,11 @@
           window.location.href = 'pages/home.html';
         }
       });
+
+      setTimeout(() => {
+        year = new Date().getFullYear();
+        document.querySelector('.copyright').innerHTML = `Bali Tech -  © Todos os direitos reservados. ${year}`
+      }, 1000);
     </script>
   </body>
 </html>

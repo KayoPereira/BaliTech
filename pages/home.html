@@ -140,6 +140,10 @@
           <div class="partner-info">
             <img src="../images/partners/logos/logo_dell.png">
             <p>a Dell é conhecida por projetar, fabricar, vender e<br> dar suporte a computadores pessoais, servidores,<br> dispositivos de armazenamento de dados,<br> software e periféricos.</p>
+            <a href="/pages/partner.html?partner=dell" class="learn-more partner-page">
+              Saiba Mais
+              <i class="fa-solid fa-plus" style="color: #f6c000; font-size: 15px;"></i>
+            </a>
           </div> 
         </div>
       </div>
@@ -221,6 +225,8 @@
       const imgPartner = document.querySelector('.partner-info-container img');
       const textPartner = document.querySelector('.partner-info p');
       const logoPartner = document.querySelector('.partner-info img');
+      const partnerLink = document.querySelector('.partner-page');
+
       const screenWidth = window.innerWidth;
       const partnerTexts = {
         dell: "a Dell é conhecida por projetar, fabricar, vender e<br> dar suporte a computadores pessoais, servidores,<br> dispositivos de armazenamento de dados,<br> software e periféricos.",
@@ -240,10 +246,13 @@
               imgPartner.style.opacity = 1;
               logoPartner.style.opacity = 1;
               textPartner.style.opacity = 1;
+              partnerLink.style.opacity = 1;
 
               imgPartner.src = `../images/partners/banners/${partner}.png`;
               logoPartner.src = `../images/partners/logos/logo_${partner}.png`;
               textPartner.innerHTML = partnerTexts[partner];
+              partnerLink.href = `/pages/partner.html?partner=${partner}`;
+
 
               logoPartner.classList = ''
               imgPartner.classList = ''
@@ -255,6 +264,7 @@
               imgPartner.style.opacity = 0;
               logoPartner.style.opacity = 0;
               textPartner.style.opacity = 0;
+              partnerLink.style.opacity = 0;
 
               await new Promise(resolve => setTimeout(resolve, 1000));
             }
@@ -264,6 +274,11 @@
     
       window.addEventListener('load', changePartnerImages);
       window.addEventListener('resize', changePartnerImages);
+      
+      setTimeout(() => {
+        year = new Date().getFullYear();
+        document.querySelector('.copyright').innerHTML = `Bali Tech -  © Todos os direitos reservados. ${year}`
+      }, 1000);
     </script>
   </body>
 </html>

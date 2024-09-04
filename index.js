@@ -51,9 +51,11 @@ function changePartner(partnerId) {
   const partnerInfoContainer = document.querySelector('.partner-info-container');
   const imgPartner = partnerInfoContainer.children[0]
   const imgLogoPartner = partnerInfoContainer.children[1].children[0]
+  const partnerLink = document.querySelector('.partner-page');
   imgPartner.src = `../images/partners/banners/${partnerId}.png`;
   imgLogoPartner.src = `../images/partners/logos/logo_${partnerId}.png`;
   partnerInfoContainer.children[1].children[1].innerHTML = partnerTexts[partnerId];
+  partnerLink.href = `/pages/partner.html?partner=${partnerId}`;
 }
 
 

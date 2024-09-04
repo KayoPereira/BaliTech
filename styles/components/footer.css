@@ -52,6 +52,16 @@ footer .email, .phone {
   color: var(--purple-color-font);
 }
 
+.container-cards a {
+  text-decoration: none;
+  color: black;
+}
+
+.container-cards a:hover {
+  text-decoration: none;
+  color: var(--purple-color-font);
+}
+
 .container-cards {
   width: 100%;
   display: flex;
@@ -139,13 +149,18 @@ footer .email, .phone {
     align-items: center;
   }
 
+  .container-cards a {
+    width: 80%;
+  }
+
   .container-cards div {
     margin: 30px 0 !important;
     width: clamp(70%, 80%, 90%);
   }
 
-  .container-cards > div:first-child {
+  .container-cards a > div:first-child {
     margin-right: 0 !important;
+    width: 100%;
   }
   
   .container-cards > div:nth-child(2) {
