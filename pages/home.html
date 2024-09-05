@@ -279,6 +279,11 @@
         year = new Date().getFullYear();
         document.querySelector('.copyright').innerHTML = `Bali Tech -  © Todos os direitos reservados. ${year}`
       }, 1000);
+
+
+      document.querySelector('ul li:last-child').addEventListener('click', () => {
+        window.location.href = '/pages/partners.html';
+      });
     </script>
   </body>
 </html>

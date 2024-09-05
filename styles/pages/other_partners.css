@@ -1,0 +1,71 @@
+@import "./partner.css";
+
+#footer {
+  margin-top: 600px;
+}
+
+.container-partners {
+  background-color: #F1F0F0;
+  padding: 30px;
+}
+
+.partner-card {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.partner-card h3 {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.partner-card p {
+  font-size: 1em;
+  margin: 30px;
+}
+
+.other-partners {
+  border-radius: 10px;
+}
+
+@media (max-width: 1160px) {
+  #footer {
+    margin-top: 800px;
+  }
+}
+
+@media (max-width: 991px) {
+  #footer {
+    margin-top: 1500px;
+  }
+}
+
+@media (max-width: 768px) {
+  #footer {
+    margin-top: 1600px;
+  }
+}
+
+@media (max-width: 767px) {
+  #footer {
+    margin-top: 1900px;
+  }
+}
+
+@media (max-width: 711px) {
+  #footer {
+    margin-top: 2100px;
+  }
+}
+
+@media (max-width: 550px) {
+  #footer {
+    margin-top: 2200px;
+  }
+}
