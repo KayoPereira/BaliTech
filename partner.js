@@ -334,7 +334,7 @@ const cssClass = `
     height: 100%;
     max-height: 700px;
     margin-top: 48px;
-    background: linear-gradient(to top, ${partnersInfo.partners[partner].colors.colorGradient}, #ffffff);
+    background: linear-gradient(to top, ${partnersInfo?.partners[partner]?.colors?.colorGradient}, #ffffff);
   }
 
   .category {

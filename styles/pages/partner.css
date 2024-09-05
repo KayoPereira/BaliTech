@@ -107,7 +107,7 @@
     margin-bottom: 50px;
   }
   .backpage {
-    margin-bottom: 50px;
+    margin: 50px 0;
   }
 
   #footer {
@@ -129,4 +129,13 @@
     max-height: 1100px !important;
   }
 
+  .partners {
+    position: relative;
+  }
+
+  .actions-partners {
+    position: absolute !important;
+    width: 100% !important;
+    top: 50% !important;
+  }
 }

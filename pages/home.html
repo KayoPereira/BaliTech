@@ -146,6 +146,15 @@
             </a>
           </div> 
         </div>
+        <div class="d-none actions-partners" id="actions-partners">
+          <button id="previous">
+            <i class="fa-solid fa-arrow-left" style="color: #5E17EB"></i>
+          </button>
+          <button id="next">
+            <i class="fa-solid fa-arrow-right" style="color: #5E17EB"></i>
+          </button>
+        </div>
+        <button class="d-none" id="more-partners"> Mais parceiros <i class="fa-solid fa-plus" style="color: #f6c000; font-size: 15px;"></i></button>
       </div>
     </section>
 
@@ -240,41 +249,115 @@
         hpe: "A HPE Aruba Networking é uma divisão da Hewlett Packard<br> Enterprise especializada em redes sem fio, comutação e<br> segurança, a HPE Aruba oferece produtos que suportam a<br> conectividade em ambientes corporativos, desde pequenas<br> empresas até grandes data centers."
       }
 
-      async function changePartnerImages() {
-        if (screenWidth <= 540) {
-          while (true) {
-            for (const partner of partners) {
-              imgPartner.style.opacity = 1;
-              logoPartner.style.opacity = 1;
-              textPartner.style.opacity = 1;
-              partnerLink.style.opacity = 1;
 
-              imgPartner.src = `../images/partners/banners/${partner}.png`;
-              logoPartner.src = `../images/partners/logos/logo_${partner}.png`;
-              textPartner.innerHTML = partnerTexts[partner];
-              partnerLink.href = `/pages/partner.html?partner=${partner}`;
+      if (screenWidth <= 540) {
 
-
-              logoPartner.classList = ''
-              imgPartner.classList = ''
-              logoPartner.classList.add(`${partner}-logo`)
-              imgPartner.classList.add(`${partner}-banner`)
-
-              await new Promise(resolve => setTimeout(resolve, 10000));
-
-              imgPartner.style.opacity = 0;
-              logoPartner.style.opacity = 0;
-              textPartner.style.opacity = 0;
-              partnerLink.style.opacity = 0;
-
-              await new Promise(resolve => setTimeout(resolve, 1000));
-            }
+        const style = document.createElement("style");
+        const cssClass = `
+          #previous, #next {
+            background-color: transparent;
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            margin: 0 10px;
+            cursor: pointer;
           }
+
+          #actions-partners {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+          }
+
+          #more-partners {
+            background-color: transparent;
+            border: 1px solid #5E17EB;
+            font-family: "Open Sans", sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            color: #333333;
+            margin-top: 20px;
+          }
+        `;
+
+        style.appendChild(document.createTextNode(cssClass));
+        document.head.appendChild(style);
+
+        const previousBtn = document.getElementById('previous');
+        const nextBtn = document.getElementById('next');
+        const actionsPartners = document.getElementById('actions-partners');
+        const morePartners = document.getElementById('more-partners');
+
+        actionsPartners.classList.remove('d-none');
+        actionsPartners.classList.add('d-flex', 'justify-content-between', 'align-items-center');
+        morePartners.classList.remove('d-none');
+
+        morePartners.addEventListener('click', () => {
+          window.location.href = '/pages/partners.html';
+        });
+
+        let currentPartner = 0;
+
+        previousBtn.addEventListener('click', () => {
+          currentPartner = currentPartner === 0 ? partners.length - 1 : currentPartner - 1;
+          changePartner(currentPartner);
+        });
+
+        nextBtn.addEventListener('click', () => {
+          currentPartner = currentPartner === partners.length - 1 ? 0 : currentPartner + 1;
+          changePartner(currentPartner);
+        });
+
+        function changePartner(index) {
+          const partner = partners[index];
+          imgPartner.src = `../images/partners/banners/${partner}.png`;
+          logoPartner.src = `../images/partners/logos/logo_${partner}.png`;
+          textPartner.innerHTML = partnerTexts[partner];
+          partnerLink.href = `/pages/partner.html?partner=${partner}`;
+          logoPartner.classList = ''
+          imgPartner.classList = ''
+          logoPartner.classList.add(`${partner}-logo`)
+          imgPartner.classList.add(`${partner}-banner`)
         }
       }
+
+      // async function changePartnerImages() {
+      //   if (screenWidth <= 540) {
+      //     while (true) {
+      //       for (const partner of partners) {
+      //         imgPartner.style.opacity = 1;
+      //         logoPartner.style.opacity = 1;
+      //         textPartner.style.opacity = 1;
+      //         partnerLink.style.opacity = 1;
+
+      //         imgPartner.src = `../images/partners/banners/${partner}.png`;
+      //         logoPartner.src = `../images/partners/logos/logo_${partner}.png`;
+      //         textPartner.innerHTML = partnerTexts[partner];
+      //         partnerLink.href = `/pages/partner.html?partner=${partner}`;
+
+
+      //         logoPartner.classList = ''
+      //         imgPartner.classList = ''
+      //         logoPartner.classList.add(`${partner}-logo`)
+      //         imgPartner.classList.add(`${partner}-banner`)
+
+      //         await new Promise(resolve => setTimeout(resolve, 10000));
+
+      //         imgPartner.style.opacity = 0;
+      //         logoPartner.style.opacity = 0;
+      //         textPartner.style.opacity = 0;
+      //         partnerLink.style.opacity = 0;
+
+      //         await new Promise(resolve => setTimeout(resolve, 1000));
+      //       }
+      //     }
+      //   }
+      // }
     
-      window.addEventListener('load', changePartnerImages);
-      window.addEventListener('resize', changePartnerImages);
+      // window.addEventListener('load', changePartnerImages);
+      // window.addEventListener('resize', changePartnerImages);
       
       setTimeout(() => {
         year = new Date().getFullYear();

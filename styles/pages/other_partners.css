@@ -6,7 +6,7 @@
 
 .container-partners {
   background-color: #F1F0F0;
-  padding: 30px;
+  /* padding: 30px; */
 }
 
 .partner-card {
@@ -42,19 +42,19 @@
 
 @media (max-width: 991px) {
   #footer {
-    margin-top: 1500px;
+    margin-top: 1600px;
   }
 }
 
 @media (max-width: 768px) {
   #footer {
-    margin-top: 1600px;
+    margin-top: 1800px;
   }
 }
 
 @media (max-width: 767px) {
   #footer {
-    margin-top: 1900px;
+    margin-top: 2100px;
   }
 }
 
@@ -64,8 +64,29 @@
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 672px) {
   #footer {
     margin-top: 2200px;
   }
+}
+
+@media (max-width: 607px) {
+  #footer {
+    margin-top: 2300px;
+  }
+}
+
+
+@media (max-width: 550px) {
+  #footer {
+    margin-top: 2130px;
+  }
+}
+
+@media (max-width: 1440px) and (min-height: 3000px) {
+  #footer {
+    margin-top: 975px;
+  }
+}
+  
 }
