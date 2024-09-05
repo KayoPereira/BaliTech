@@ -119,11 +119,14 @@
   }
   .partner-info-container img:first-child {
     width: 90% !important;
-    height: 200px !important;
+    height: 160px !important;
   }
   .partner-info-container .partner-info img {
     max-width: 90%;
     max-height: 50px;
+  }
+  .aws-banner{
+    height: 240px !important;
   }
   .lenovo-logo {
     max-width: 50% !important;

@@ -56,6 +56,9 @@ function changePartner(partnerId) {
   imgLogoPartner.src = `../images/partners/logos/logo_${partnerId}.png`;
   partnerInfoContainer.children[1].children[1].innerHTML = partnerTexts[partnerId];
   partnerLink.href = `/pages/partner.html?partner=${partnerId}`;
+
+  imgLogoPartner.classList = ''
+  imgLogoPartner.classList.add(`${partnerId}-logo`)
 }
 
 
