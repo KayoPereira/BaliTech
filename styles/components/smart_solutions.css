@@ -106,4 +106,7 @@ ul {
   .smart-service-card {
     width: 290px;
   }
+  #solucoes {
+    margin-bottom: 0;
+  }
 }

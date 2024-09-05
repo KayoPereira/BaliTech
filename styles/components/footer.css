@@ -129,6 +129,7 @@ footer .email, .phone {
 @media (max-width: 540px) {
   footer {
     height: 60% !important;
+    margin-top: 460px;
   }
 
   .footer-img {

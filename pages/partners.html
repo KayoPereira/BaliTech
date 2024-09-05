@@ -116,33 +116,6 @@
         .then((data) => {
           document.getElementById("footer").innerHTML = data;
         });
-      
-      document.getElementById('backpage').addEventListener('click', function() {
-        window.location.href = '/pages/home.html#parceiros';
-      });
-
-      function capitalize(str) {
-        if (!str) return str;
-        return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
-      }
-
-      function getQueryParam(param) {
-        const urlParams = new URLSearchParams(window.location.search);
-        return urlParams.get(param);
-      }
-
-      let titulo = getQueryParam('partner');
-      titulo = capitalize(titulo);
-
-      if(titulo == "Aws"){
-        titulo = "AWS"
-      } else if (titulo == "Hpe"){
-        titulo = "HPE aruba networking"
-      }
-
-      if (titulo) {
-        document.title = decodeURIComponent(`BaliTech | ${titulo}`);
-      }
 
       setTimeout(() => {
         year = new Date().getFullYear();
