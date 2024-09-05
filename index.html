@@ -1,73 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <script src="index.js"></script>
-  <script src="https://kit.fontawesome.com/6b6ee8f0c0.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <title>Bali Tech</title>
-</head>
-<body>
-  <header class="my-4 mb-5" style="margin-left: 15%; background-color: transparent;">
-    <i class="fa-solid fa-circle" style="color: #532298;"></i>
-    <span class="inter-span-header ms-3">
-      BALI TECH
-    </span>
-  </header>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaliTech | Início</title>
+    <link rel="stylesheet" type="text/css" href="styles/home.css">
+    <script src="https://kit.fontawesome.com/6b6ee8f0c0.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </head>
+  <body style="position: relative;">
+    <div id="navbar"></div>
+    <section style="position: relative;" id="banner">
+      <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../images/banner.png);">
+        <div class="container">
+          <h1 id="main-text">Uma empresa de <br>SOLUÇÕES</h1>
+          <p>Transformando seu dia a dia com soluções tecnológicas inovadoras e eficientes</p>
+        </div>
+      </div>
 
-  <section class="d-flex justify-content-evenly mt-5 align-items-center" style="position: relative;">
-    <img src="images/elipse.png" alt="Elipse gradient" class="elipse-img">
-    <img src="images/vector.png" alt="Vector gradient" class="vector-img">
+      <div id="container-service-cards">
+        <div class="service-card">
+          <div class="container-service-card-info">
+            <img src="../images/solucoes.png">
+            <div class="text-service-card">
+              <span>Provedor de Soluções</span>
+              <p>As soluções em tecnologia são uma realidade e tem o poder de desbloquear resultados incríveis nas empresas. Além disso, são um apoio fundamental para a estratégia.</p>
+              <a href="/pages/services.html" class="learn-more">
+                Saiba Mais
+                <i class="fa-solid fa-plus" style="color: #f6c000; font-size: 15px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="container-service-card-info">
+            <img src="../images/haas.png">
+            <div class="text-service-card">
+              <span>HAAS</span>
+              <p>"Hardware as a Service", é um modelo de negócios onde o hardware é fornecido a um cliente como um serviço, em vez de ser vendido como um produto...</p>
+              <a href="/pages/services.html#haas" class="learn-more">
+                Saiba Mais
+                <i class="fa-solid fa-plus" style="color: #f6c000; font-size: 15px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="container-service-card-info">
+            <img src="../images/monitoramento.png">
+            <div class="text-service-card">
+              <span>Monitoramento</span>
+              <p>Um conjunto de ferramentas e processos para observar, acompanhar e gerenciar o desempenho, a disponibilidade e a segurança de sistemas de TI, redes, aplicações e<br> serviços...</p>
+              <a href="/pages/services.html#monitoramento" class="learn-more">
+                Saiba Mais
+                <i class="fa-solid fa-plus" style="color: #f6c000; font-size: 15px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="left-section">
-      <h1 class="inter-h1">Oops!</h1>
-      <h4 class="inter-h4">Site em construção</h4>
-      <span class="inter-span-section">
-        Estamos trabalhando duro, em breve, <br>
-        você poderá explorar e aproveitar todas <br>
-        as funcionalidades do nosso novo site. <br>
-        Fique ligado!
-      </span>
-    </div>
-    <div class="right-section">
-      <img src="images/right-section-image.png" alt="Under construction" class="img-fluid">
-    </div>
-  </section>
+    <section id="sobre">
+      <div class="container-img">
+        <img src="../images/about_bali_home.png">
+      </div>
+      <div class="container-text">
+        <div class="container-about">
+          <i class="fa-solid fa-circle me-3" style="color: #f6c000; font-size: 10px;"></i>
+          <span class="about-text">SOBRE A BALI</span>
+          <i class="fa-solid fa-circle ms-3" style="color: #f6c000; font-size: 10px;"></i>
+        </div>
+        <div class="mission">
+          <span>Nossa Missão</span>
+          <p>É ser a referência em soluções tecnológicas inovadoras e sustentáveis.</p>
+        </div>
+        <div class="vision">
+          <span>Nossa Visão</span>
+          <p>É transformar o futuro através de soluções tecnológicas inovadoras.</p>
+        </div>
+      </div>
+    </section>
 
-  <footer class="mt-5 d-flex" style="position: relative;">
-    <div class="left-footer">
-      <span class="info-contato">
-        INFORMAÇÕES DE CONTATO
-      </span>
-      <hr>
-      <ul style="list-style-type: none;">
-        <li class="d-flex align-items-center">
-          <i class="fa-solid fa-envelope me-2" style="color: white;"></i>
-          <a href="mailto:contato@balitech.com.br">contato@balitech.com.br</a>
-        </li>
-        <li class="d-flex">
-          <!-- <i class="fa-solid fa-phone me-2" style="color: white;"></i> -->
-          <a href="#"></a>
-        </li>
-        <!--
-        <li class="d-flex">
-          <i class="fa-solid fa-globe me-2" style="color: white;"></i>
-          <span class="span-location">São Paulo, Brasil</span>
-        </li>
-        -->
-      </ul>
-    </div>
-    <div class="right-footer">
-      <span>
-        © 2024 - Bali Tech - Direitos Reservados
-      </span>
-    </div>
-  </footer>
-</body>
+    <section id="parceiros">
+      <div class="container-about">
+        <i class="fa-solid fa-circle me-3" style="color: #f6c000; font-size: 7px;"></i>
+        <span class="about-text">PARCEIROS</span>
+        <i class="fa-solid fa-circle ms-3" style="color: #f6c000; font-size: 7px;"></i>
+      </div>
+      <span id="partners-text-header">A BALI fornece a qualidade que seu projeto precisa</span>
+      <div id="partners">
+        <div id="partners-list">
+          <ul>
+            <li>
+              <img src="../images/partners/color/dell.svg" id="dell" class="selected partner-logo-list">
+              <img src="../images/partner_selector.png" id="dell-partner-selector" class="dell partner-selector">
+            </li>
+            <li>
+              <img src="../images/partners/grey/lenovo.svg" id="lenovo" class="partner-logo-list">
+              <img src="../images/partner_selector.png" id="lenovo-partner-selector" class="lenovo partner-selector">
+            </li>
+            <li>
+              <img src="../images/partners/grey/cisco.svg" id="cisco" class="partner-logo-list">
+              <img src="../images/partner_selector.png" id="cisco-partner-selector" class="cisco partner-selector">
+            </li>
+            <li>
+              <img src="../images/partners/grey/fortinet.svg" id="fortinet" class="partner-logo-list">
+              <img src="../images/partner_selector.png" id="fortinet-partner-selector" class="fortinet partner-selector">
+            </li>
+            <li>
+              <img src="../images/partners/grey/nutanix.svg" id="nutanix" class="partner-logo-list">
+              <img src="../images/partner_selector.png" id="nutanix-partner-selector" class="nutanix partner-selector">
+            </li>
+            <li>
+              <img src="../images/partners/grey/aws.svg" id="aws" class="partner-logo-list">
+              <img src="../images/partner_selector.png" id="aws-partner-selector" class="aws partner-selector">
+            </li>
+            <li>
+              <img src="../images/partners/grey/microsoft.svg" id="microsoft" class="partner-logo-list">
+              <img src="../images/partner_selector.png" id="microsoft-partner-selector" class="microsoft partner-selector">
+            </li>
+            <li>
+              <img src="../images/partners/grey/hpe.svg" id="hpe" class="partner-logo-list">
+              <img src="../images/partner_selector.png" id="hpe-partner-selector" class="hpe partner-selector">
+            </li>
+            <li>
+              <img src="../images/partners/grey/more.svg" id="more" class="partner-logo-list">
+            </li>
+          </ul>
+        </div>
+        <div class="partner-info-container">
+          <img src="../images/partners/banners/dell.png" style="max-width: 770px; max-height: 240px;">
+          <div class="partner-info">
+            <img src="../images/partners/logos/logo_dell.png" class="dell-logo">
+            <p>a Dell é conhecida por projetar, fabricar, vender e<br> dar suporte a computadores pessoais, servidores,<br> dispositivos de armazenamento de dados,<br> software e periféricos.</p>
+            <a href="/pages/partner.html?partner=dell" class="learn-more partner-page">
+              Saiba Mais
+              <i class="fa-solid fa-plus" style="color: #f6c000; font-size: 15px;"></i>
+            </a>
+          </div> 
+        </div>
+        <div class="d-none actions-partners" id="actions-partners">
+          <button id="previous">
+            <i class="fa-solid fa-arrow-left" style="color: #5E17EB"></i>
+          </button>
+          <button id="next">
+            <i class="fa-solid fa-arrow-right" style="color: #5E17EB"></i>
+          </button>
+        </div>
+        <button class="d-none" id="more-partners"> Mais parceiros <i class="fa-solid fa-plus" style="color: #f6c000; font-size: 15px;"></i></button>
+      </div>
+    </section>
+
+    <section id="solucoes">
+      <div class="smart-solutions-header">
+        <i class="fa-solid fa-circle me-3" style="color: #f6c000; font-size: 7px;"></i>
+        <span class="about-text">NOSSOS SERVIÇOS</span>
+        <i class="fa-solid fa-circle ms-3" style="color: #f6c000; font-size: 7px;"></i>
+      </div>
+      <span id="smart-solutions-text-header">Soluções Inteligentes </span>
+      <div id="smart-solutions">
+        <a href="/pages/services.html#haas" class="container-smart-service-card-link">
+          <div class="smart-service-card">
+            <div class="container-smart-service-card-info">
+              <img src="../images/icons/haas.png">
+              <div class="text-smart-service-card">
+                <span>HAAS</span>
+                <p class="d-none">As soluções em tecnologia são uma<br> realidade e tem o poder de<br> desbloquear resultados incríveis nas<br> empresas. Além disso, são um apoio<br> fundamental para a estratégia.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="/pages/services.html#implementacao" class="container-smart-service-card-link">
+          <div class="smart-service-card">
+            <div class="container-smart-service-card-info">
+              <img src="../images/icons/implementacao.png">
+              <div class="text-smart-service-card">
+                <span>IMPLEMENTAÇÃO</span>
+                <p class="d-none">"Hardware as a Service", é um modelo<br> de negócios onde o hardware é<br> fornecido a um cliente como um<br> serviço, em vez de ser vendido como<br> um produto...</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="/pages/services.html#monitoramento" class="container-smart-service-card-link">
+          <div class="smart-service-card">
+            <div class="container-smart-service-card-info">
+              <img src="../images/icons/monitoramento.png">
+              <div class="text-smart-service-card">
+                <span>MONITORAMENTO</span>
+                <p class="d-none">Um conjunto de ferramentas e<br> processos para observar, acompanhar<br> e gerenciar o desempenho, a<br> disponibilidade e a segurança de<br> sistemas de TI, redes, aplicações e<br> serviços...</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="/pages/services.html" class="container-smart-service-card-link">
+          <div class="smart-service-card more-smart-service">
+            <div class="container-smart-service-card-info">
+              <img src="../images/icons/more.png">
+              <div class="text-smart-service-card" id="more-smart-service-text">
+                <span class="text-center">MAIS<br> SERVIÇOS</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script type="module" src="../index.js"></script>
+    <script>
+      fetch('../components/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('navbar').innerHTML = data;
+            });
+
+      fetch('../components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+
+    <script>
+      const partners = ['dell', 'lenovo', 'cisco', 'fortinet', 'nutanix', 'aws', 'microsoft', 'hpe']
+      // const partners = ['aws']
+      const imgPartner = document.querySelector('.partner-info-container img');
+      const textPartner = document.querySelector('.partner-info p');
+      const logoPartner = document.querySelector('.partner-info img');
+      const partnerLink = document.querySelector('.partner-page');
+
+      const screenWidth = window.innerWidth;
+      const partnerTexts = {
+        dell: "a Dell é conhecida por projetar, fabricar, vender e<br> dar suporte a computadores pessoais, servidores,<br> dispositivos de armazenamento de dados,<br> software e periféricos.",
+        lenovo: "Produtos projetados para atender tanto consumidores<br> finais quanto empresas, destacando-se pela durabilidade,<br> desempenho e design. são amplamente reconhecidos,<br> atendendo desde profissionais que precisam de alta<br> performance até gamers e usuários em busca de<br> mobilidade e eficiência.",
+        cisco: "Especializada em equipamentos e softwares que<br> conectam pessoas e empresas. Seus produtos, como<br> roteadores, switches e sistemas de segurança, são<br> essenciais para a infraestrutura de redes em<br> organizações de todos os portes.",
+        fortinet: "Líder em segurança cibernética, especializada em<br> soluções integradas de rede e proteção. Seus<br> produtos, como firewalls, sistemas de prevenção<br> de intrusões e segurança em nuvem.",
+        nutanix: "A Nutanix é uma empresa de tecnologia<br> especializada em soluções de infraestrutura<br> hiperconvergente, que simplificam a gestão de data<br> centers e nuvens híbridas.",
+        aws: "A AWS (Amazon Web Services) é a principal provedora<br> global de serviços de computação em nuvem. Oferecendo<br> uma vasta gama de soluções, desde armazenamento e<br> bancos de dados até inteligência artificial e análise de<br> dados.",
+        microsoft: "A Microsoft é uma das maiores e mais influentes empresas<br> de tecnologia do mundo, conhecida por seu software<br> inovador, como o sistema operacional Windows, o pacote<br> de produtividade Office e a plataforma de nuvem Azure.",
+        hpe: "A HPE Aruba Networking é uma divisão da Hewlett Packard<br> Enterprise especializada em redes sem fio, comutação e<br> segurança, a HPE Aruba oferece produtos que suportam a<br> conectividade em ambientes corporativos, desde pequenas<br> empresas até grandes data centers."
+      }
+
+
+      if (screenWidth <= 540) {
+
+        const style = document.createElement("style");
+        const cssClass = `
+          #previous, #next {
+            background-color: transparent;
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            margin: 0 10px;
+            cursor: pointer;
+          }
+
+          #actions-partners {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+          }
+
+          #more-partners {
+            background-color: transparent;
+            border: 1px solid #5E17EB;
+            font-family: "Open Sans", sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            color: #333333;
+            margin-top: 20px;
+          }
+        `;
+
+        style.appendChild(document.createTextNode(cssClass));
+        document.head.appendChild(style);
+
+        const previousBtn = document.getElementById('previous');
+        const nextBtn = document.getElementById('next');
+        const actionsPartners = document.getElementById('actions-partners');
+        const morePartners = document.getElementById('more-partners');
+
+        actionsPartners.classList.remove('d-none');
+        actionsPartners.classList.add('d-flex', 'justify-content-between', 'align-items-center');
+        morePartners.classList.remove('d-none');
+
+        morePartners.addEventListener('click', () => {
+          window.location.href = '/pages/partners.html';
+        });
+
+        let currentPartner = 0;
+
+        previousBtn.addEventListener('click', () => {
+          currentPartner = currentPartner === 0 ? partners.length - 1 : currentPartner - 1;
+          changePartner(currentPartner);
+        });
+
+        nextBtn.addEventListener('click', () => {
+          currentPartner = currentPartner === partners.length - 1 ? 0 : currentPartner + 1;
+          changePartner(currentPartner);
+        });
+
+        function changePartner(index) {
+          const partner = partners[index];
+          imgPartner.src = `../images/partners/banners/${partner}.png`;
+          logoPartner.src = `../images/partners/logos/logo_${partner}.png`;
+          textPartner.innerHTML = partnerTexts[partner];
+          partnerLink.href = `/pages/partner.html?partner=${partner}`;
+          logoPartner.classList = ''
+          imgPartner.classList = ''
+          logoPartner.classList.add(`${partner}-logo`)
+          imgPartner.classList.add(`${partner}-banner`)
+        }
+      }
+
+      // async function changePartnerImages() {
+      //   if (screenWidth <= 540) {
+      //     while (true) {
+      //       for (const partner of partners) {
+      //         imgPartner.style.opacity = 1;
+      //         logoPartner.style.opacity = 1;
+      //         textPartner.style.opacity = 1;
+      //         partnerLink.style.opacity = 1;
+
+      //         imgPartner.src = `../images/partners/banners/${partner}.png`;
+      //         logoPartner.src = `../images/partners/logos/logo_${partner}.png`;
+      //         textPartner.innerHTML = partnerTexts[partner];
+      //         partnerLink.href = `/pages/partner.html?partner=${partner}`;
+
+
+      //         logoPartner.classList = ''
+      //         imgPartner.classList = ''
+      //         logoPartner.classList.add(`${partner}-logo`)
+      //         imgPartner.classList.add(`${partner}-banner`)
+
+      //         await new Promise(resolve => setTimeout(resolve, 10000));
+
+      //         imgPartner.style.opacity = 0;
+      //         logoPartner.style.opacity = 0;
+      //         textPartner.style.opacity = 0;
+      //         partnerLink.style.opacity = 0;
+
+      //         await new Promise(resolve => setTimeout(resolve, 1000));
+      //       }
+      //     }
+      //   }
+      // }
+    
+      // window.addEventListener('load', changePartnerImages);
+      // window.addEventListener('resize', changePartnerImages);
+      
+      setTimeout(() => {
+        year = new Date().getFullYear();
+        document.querySelector('.copyright').innerHTML = `Bali Tech -  © Todos os direitos reservados. ${year}`
+      }, 1000);
+
+
+      document.querySelector('ul li:last-child').addEventListener('click', () => {
+        window.location.href = '/pages/partners.html';
+      });
+    </script>
+  </body>
 </html>

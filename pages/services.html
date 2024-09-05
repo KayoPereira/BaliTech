@@ -366,11 +366,7 @@
             });
 
       document.getElementById('backpage').addEventListener('click', function() {
-        if (document.referrer !== '') {
-          history.back();
-        } else {
-          window.location.href = 'pages/home.html';
-        }
+        window.location.href = '/';
       });
 
       setTimeout(() => {

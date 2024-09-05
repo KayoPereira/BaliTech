@@ -94,6 +94,7 @@ footer a:hover {
 } */
 
 @import "colors.css";
+@import "styles/navbar.css";
 
 .inter-span-header {
   font-family: "Inter", sans-serif;
