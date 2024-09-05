@@ -13,7 +13,7 @@ footer {
   width: 50%;
   position: absolute;
   top: 15%;
-  left: 5%
+  left: 25%
 }
 
 .container-text{
@@ -78,7 +78,7 @@ footer .email, .phone {
   .container-footer {
     position: absolute;
     top: 10%;
-    left: 5%;
+    left: 25%;
   }
 
   .container-text{

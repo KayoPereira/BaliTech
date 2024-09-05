@@ -6,16 +6,20 @@
 }
 
 #sobre .container-img {
-  width: 50%;
+  width: clamp(20vw, 45vw, 50vw);
   position: absolute;
   left: 5%;
   top: 300px;
 }
 
+.container-img img {
+  width: 100%;
+}
+
 #sobre .container-text {
   position: absolute;
-  right: 15%;
-  top: 385px;
+  right: clamp(10vw, 12vw, 14vw);
+  top: clamp(295px, 350px, 385px);
 }
 
 .container-about {
@@ -34,7 +38,7 @@
 
 .mission span, .vision span{
   font-family: "Open Sans", sans-serif;
-  font-size: 35px;
+  font-size: clamp(30px, 32px, 34px);
   font-weight: bold;
   color: var(--grey-logo-font)
 }

@@ -38,7 +38,7 @@
       <div class="partner-content-wrapper">
         <div class="partner-content">
           <div class="d-flex justify-content-start w-100 backpage">
-            <button id="backpage" class="">
+            <button id="backpage">
           </div>
           <div class="category-selector">
           </div>
@@ -71,11 +71,7 @@
         });
       
       document.getElementById('backpage').addEventListener('click', function() {
-        if (document.referrer !== '') {
-          history.back();
-        } else {
-          window.location.href = '/pages/home.html';
-        }
+        window.location.href = '/pages/home.html#parceiros';
       });
 
       function capitalize(str) {
