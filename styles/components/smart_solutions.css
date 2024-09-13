@@ -58,6 +58,10 @@
   cursor: pointer;
 }
 
+.text-smart-service-card {
+  text-align: center;
+}
+
 .text-smart-service-card span {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
